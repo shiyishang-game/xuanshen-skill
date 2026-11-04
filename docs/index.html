@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self' https://cloud.umami.is; font-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>炫神.skill — 把世界第一上单装进你的 AI</title>
+<meta name="description" content="非官方粉丝二创。AI 龙哥永不下播：选个烦恼，让「S6 第一个王者」嘴臭锐评你；6 道题测你的含金量；一行命令把龙哥装进 Claude Code、Codex、Cursor。">
+<meta property="og:title" content="炫神.skill — 把世界第一上单装进你的 AI">
+<meta property="og:description" content="非官方粉丝二创。AI 龙哥永不下播：选个烦恼，让「S6 第一个王者」嘴臭锐评你；6 道题测你的含金量；一行命令把龙哥装进 Claude Code、Codex、Cursor。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shiyishang-game.github.io/xuanshen-skill/">
+<meta property="og:image" content="https://shiyishang-game.github.io/xuanshen-skill/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0B0B12">
+<link rel="icon" type="image/png" href="img/favicon-32.png">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<nav id="nav" aria-label="页面导航"><div class="nav-inner"><a class="logo" href="#hero">炫神.skill</a><div class="nav-links"><a href="#chat">骂醒我</a><a href="#quiz">鉴定</a><a href="#memes">梗百科</a><a href="#install">安装</a></div></div></nav>
+<main>
+<section id="hero">
+  <div id="heroDanmaku" class="danmaku-layer" aria-hidden="true"></div>
+  <div class="container hero-content">
+    <div class="live-pill"><span class="live-dot" aria-hidden="true"></span><b>LIVE</b><span>炫神直播间 · AI 版</span></div>
+    <h1>炫神.skill</h1>
+    <p class="hero-subtitle">把 S6 第一个王者，装进你的 AI。</p>
+    <p class="hero-desc">AI 龙哥永不下播，专治嘴硬、软蛋和跟风够。</p>
+    <div class="hero-actions"><button class="btn-primary" id="heroChat" type="button">让龙哥骂醒我</button><a class="btn-ghost" href="#install">装进我的 AI</a></div>
+    <div id="quoteCard" class="quote-card skeleton" aria-live="off"><div class="quote-label">今日龙言</div><p id="quoteText"></p><a id="quoteSource" target="_blank" rel="noopener noreferrer">出处 ▸</a></div>
+    <p class="hero-note">非官方粉丝二创 · 回复由 AI 生成，不代表本人</p>
+  </div>
+</section>
+<section id="chat" class="container">
+  <div class="kicker">01 · 骂醒</div><h2>让龙哥骂醒你</h2><p class="section-desc">选个烦恼，或者直接说。龙哥嘴臭，但句句有含金量。</p>
+  <div id="chatContent" class="skeleton loading-block" aria-busy="true"></div>
+</section>
+<section id="quiz" class="container">
+  <div class="kicker">02 · 鉴定</div><h2>测测你的含金量</h2><p class="section-desc">6 道题，龙哥亲自给你出鉴定书。</p>
+  <div id="quizContent" class="quiz-card skeleton loading-block" aria-busy="true"></div>
+</section>
+<section id="memes" class="container">
+  <div class="kicker">03 · 梗百科</div><h2>炫神梗百科</h2><p class="section-desc">看懂这些，你才不是易拉罐。</p>
+  <div id="memesContent" class="skeleton loading-block" aria-busy="true"></div>
+</section>
+<section id="install" class="container">
+  <div class="kicker">04 · 安装</div><h2>把龙哥装进你的 AI</h2><p class="section-desc">Claude Code、Codex、Cursor……支持 skills 的 agent 都能装；豆包、Kimi、DeepSeek 用提示词版。</p>
+  <div id="installContent" class="skeleton loading-block" aria-busy="true"></div>
+  <p class="install-triggers">装好后对 AI 说：「龙哥，骂醒我」「用炫神的方式锐评一下」「炫神会怎么看」</p>
+  <a class="btn-ghost github-link" data-repo-link target="_blank" rel="noopener noreferrer">★ 去 GitHub 点个 Star</a>
+</section>
+</main>
+<footer id="footer" class="container">
+  <p>非官方粉丝二创，与 B 站及任何直播平台无关</p>
+  <p>页面里「龙哥」的话全部由 AI 预先生成，不代表本人观点。图一乐，别当真，更别拿去冲人</p>
+  <p>隐私：你输入的字只留在你的浏览器里，不上传、不保存。本站只做匿名访问计数，不用 Cookie</p>
+  <p>素材出处见梗百科与 <a data-repo-link target="_blank" rel="noopener noreferrer">GitHub 仓库</a> · MIT License</p>
+</footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<noscript>需要开启 JavaScript 才能让龙哥开播。</noscript>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
